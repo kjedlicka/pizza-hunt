@@ -5,7 +5,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "jest",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeders/seeds.js",
+    "heroku-postbuild": "npm run seed"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +18,9 @@
     "express": "^4.17.1",
     "moment": "^2.27.0",
     "mongoose": "^5.9.20"
+  },
+  "devDependencies": {
+    "@shelf/jest-mongodb": "^1.1.5",
+    "jest": "^25.3.0"
   }
 }
