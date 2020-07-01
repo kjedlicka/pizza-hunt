@@ -8,8 +8,7 @@
     "test": "jest",
     "start": "node server.js",
     "watch": "nodemon server.js",
-    "seed": "node seeders/seeds.js",
-    "heroku-postbuild": "npm run seed"
+    "seed": "node seeders/seeds.js"
   },
   "keywords": [],
   "author": "",
